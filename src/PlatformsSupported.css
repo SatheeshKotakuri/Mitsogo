@@ -1,0 +1,33 @@
+.platforms-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .platforms-container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #212121;
+  }
+  
+  .platforms-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  .platform:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+ 
+  .icon {
+    max-width: 170px;
+    max-height: 100px;
+  }
+  
+ 

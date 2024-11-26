@@ -1,0 +1,82 @@
+.logo-carousel {
+    width: 100%; /* Full-width container */
+    overflow: hidden; /* Hide overflowing logos */
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-track {
+    display: flex; /* Align logos horizontally */
+    animation: scroll-logo 8s linear infinite; /* Animation to scroll logos */
+  }
+  
+  .logo-item {
+    flex-shrink: 0; /* Prevent logos from shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Fixed width for each logo */
+    height: 100px; /* Fixed height for each logo */
+  }
+  
+  .logo-item img {
+    max-width: 100%; /* Adjust logo width */
+    max-height: 100%; /* Restrict logo height */
+    object-fit: contain; /* Maintain aspect ratio */
+    filter: grayscale(100%); /* Grayscale effect */
+    transition: filter 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .logo-item img:hover {
+    filter: grayscale(0); /* Remove grayscale on hover */
+  }
+  
+  /* Keyframes for one-by-one animation */
+  @keyframes scroll-logo {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    12.5% {
+      transform: translateX(-150px); /* Move 1 logo width */
+    }
+    25% {
+      transform: translateX(-300px); /* Move 2 logo widths */
+    }
+    37.5% {
+      transform: translateX(-450px); /* Move 3 logo widths */
+    }
+    50% {
+      transform: translateX(-600px); /* Move 4 logo widths */
+    }
+    62.5% {
+      transform: translateX(-750px); /* Move 5 logo widths */
+    }
+    75% {
+      transform: translateX(-900px); /* Move 6 logo widths */
+    }
+    87.5% {
+      transform: translateX(-1050px); /* Move 7 logo widths */
+    }
+    100% {
+      transform: translateX(0); /* Reset to start */
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .logo-item {
+      width: 120px; 
+      height: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .logo-item {
+      width: 100px; 
+      height: 60px;
+    }
+  }
+  

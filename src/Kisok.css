@@ -1,0 +1,38 @@
+.kisok-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .image-section img {
+    max-width: 550px;
+    height: auto;
+  }
+  
+  .titles-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .title-block {
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .description {
+   
+    border-radius: 4px;
+    font-size: 20px;
+    color: black;
+  }
+  
